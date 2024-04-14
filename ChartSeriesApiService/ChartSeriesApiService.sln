@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChartSeriesApiService", "ChartSeriesApiService\ChartSeriesApiService.csproj", "{BBEDE698-F188-4276-8E1F-FE9FA85B9395}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBEDE698-F188-4276-8E1F-FE9FA85B9395}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBEDE698-F188-4276-8E1F-FE9FA85B9395}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBEDE698-F188-4276-8E1F-FE9FA85B9395}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBEDE698-F188-4276-8E1F-FE9FA85B9395}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5CC62567-FBB3-4AE6-8D03-93FEE8912C72}
+	EndGlobalSection
+EndGlobal

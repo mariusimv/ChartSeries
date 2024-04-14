@@ -1,0 +1,11 @@
+.spinner-chart {
+    height: 15em;
+    width: 15em;
+    display: flex;
+    margin: 2em;
+}
+
+.spinner-border {
+    border: 1.25em solid #123456;
+    border-right-color: transparent;
+}
