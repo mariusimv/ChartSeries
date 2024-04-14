@@ -11,6 +11,7 @@ export class SeriesChartComponent implements OnInit {
   chartValuesData: any;
   chartLineOptions: any;
   dataSetPoints: ChartPoint[] | undefined = undefined;
+  info: string | undefined = undefined;
 
   constructor(private apiService: SeriesChartApiService) {
     this.chartLineOptions = {
@@ -76,7 +77,16 @@ export class SeriesChartComponent implements OnInit {
 
   async loadDataAsync() {
     this.dataSetPoints = undefined;
-    this.dataSetPoints = await this.apiService.getChartSeriesAsync();
+    this.info = undefined;
+
+    try {
+      this.dataSetPoints = await this.apiService.getChartSeriesAsync();
+    }
+    catch {
+      this.dataSetPoints = [];
+      this.info = "Error while fetching data. The server might be down!";
+    }
+
     console.log(this.dataSetPoints);
   }
 }

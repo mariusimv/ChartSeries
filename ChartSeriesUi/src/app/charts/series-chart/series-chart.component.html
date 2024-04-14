@@ -1,8 +1,9 @@
 <button class="btn btn-warning shadow-sm btn-incon-only m-2" (click)="onRefreshClick()"><img class="btn-svg-icon"
         src="/assets/refresh.svg"></button>
-<chart-js-wrapper *ngIf="dataSetPoints && chartValuesData; else loader" type="scatter" [data]="chartValuesData"
+<h5 *ngIf="info" class="m-2 text-danger">{{info}}</h5>
+<chart-js-wrapper *ngIf="!info && dataSetPoints && chartValuesData; else loader" type="scatter" [data]="chartValuesData"
     class="col-12" style="height: 25em; width: 50vw; display: grid;" [options]="chartLineOptions"></chart-js-wrapper>
 <ng-template #loader>
-    <div class="spinner-border spinner-chart" role="status">
+    <div *ngIf="!info" class="spinner-border spinner-chart" role="status">
     </div>
 </ng-template>
